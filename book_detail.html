@@ -1,0 +1,14 @@
+{% extends 'booklist/base.html' %}
+
+{% block title %}
+{{book.title}}details
+{% endblock title %}
+
+{% block content %}
+<center>
+    <h2>title: {{book.title}}</h2>
+    <h2>ratings: {{book.rating}}</h2>
+    <h2>author: {{book.author}}</h2>
+    <p>Book {{book.title}} has a ratings of {{book.rating}} and the author of the book is {{book.author}}</p>
+</center>
+{% endblock content %}
